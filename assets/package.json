@@ -1,0 +1,15 @@
+{
+  "name": "demo-with-webpack",
+  "version": "0.0.1",
+  "main": "gulpFile.js",
+  "dependencies":{
+    "css-loader":"*",
+    "style-loader":"*",
+    "webpack-stream":"*",
+    "gulp": "^3.8.11",
+    "gulp-watch":"*",
+    "gulp-less":"*",
+    "gulp-plumber":"*",
+    "vinyl-named":"*"
+  }
+}

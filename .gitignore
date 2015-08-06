@@ -1,2 +1,4 @@
 .idea
 .idea/*
+assets/node_modules
+assets/bundle

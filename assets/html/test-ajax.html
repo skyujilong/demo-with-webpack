@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh">
+    <meta charset="UTF-8">
+    <title>测试ajax例子</title>
+    <link type="text/css" rel="stylesheet" href="../bundle/css/test-ajax.css">
+    <script src="//cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script>
+    <script src="../bundle/js/vendor.js"></script>
+    <script src="../bundle/js/user-info.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="user-info">
+            <h3>添加用户</h3>
+            <div class="user-form">
+                <p>
+                    <label><span>用户姓名：</span><input name="name" type="text"></label>
+                </p>
+                <p>
+                    <label><span>学校：</span><input name="school" type="text"></label>
+                </p>
+                <p>
+                    <label><span>职务：</span><select>
+                        <option value="1">校长</option>
+                        <option value="2">班主任</option>
+                    </select></label>
+                </p>
+                <div class="control">
+                    <a class="submit" href="javascript:void(0);">提交</a>
+                    <a class="reset" href="javascript:void(1);">重置</a>
+                </div>
+            </div>
+        </div>
+        <div class="user-list">
+            <table>
+                <thead>
+                    <tr>
+                        <td>编号</td>
+                        <td>姓名</td>
+                        <td>学校</td>
+                        <td>职务</td>
+                        <td>操作</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>YJL</td>
+                        <td>Monster</td>
+                        <td>mater</td>
+                        <td><a href="javascript:void(0);">删除</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

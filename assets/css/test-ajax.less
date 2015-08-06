@@ -1,0 +1,91 @@
+@import "common/base";
+
+@YaHei: 微软雅黑;
+@efefef: #efefef;
+body {
+  font-size: @f14;
+}
+
+.wrapper {
+  margin-top: 20px;
+}
+
+.user-info {
+  h3 {
+    font-size: @f16;
+  }
+  .user-form {
+    width: 500px;
+    border: 1px solid @efefef;
+    p {
+      padding-left: 10px;
+      height: 30px;
+      line-height: 30px;
+      span {
+        display: inline-block;
+        vertical-align: middle;
+        height: 30px;
+        line-height: 30px;
+        width: 100px;
+        text-align: right;
+      }
+      input, select {
+        vertical-align: middle;
+        height: 20px;
+        width: 200px;
+      }
+    }
+    .control {
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      .submit, .reset {
+        .rounded-corners(5px);
+        text-align: center;
+        font-size: @f14;
+        color: @white;
+        background: @green;
+        height: 30px;
+        line-height: 30px;
+        width: 150px;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .submit {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+.user-list {
+  font-size: @f14;
+  margin-top: 20px;
+  table {
+    width: 100%;
+    border: 2px solid @efefef;
+    border-collapse: collapse;
+    text-align: center;
+    thead {
+      tr {
+        border-bottom: 1px solid @green;
+        td {
+          .h26;
+          font-weight: bold;
+        }
+      }
+    }
+    tbody {
+      td {
+        .h26;
+        a {
+          font-size: @f14;
+          color: @green;
+          &:hover {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
