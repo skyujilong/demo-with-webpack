@@ -28,9 +28,7 @@ gulp.task('watch:less-dev',function(){
 
 gulp.task('watch:js-dev',function(){
     return gulp.src(__dirname + '/js/main/*.js')
-        //.pipe(plumber())
         .pipe(named())
         .pipe(webpack(webpackConfig))
-        //.pipe(plumber.stop())
         .pipe(gulp.dest(__dirname + '/bundle/js/'));
 });

@@ -18,7 +18,10 @@ module.exports = {
     resolve:{
         root:[__dirname + '/js/',__dirname + '/dep/'],
         extensions:['.js','.less',''],
-        modulesDirectories:['node_modules']
+        modulesDirectories:['node_modules'],
+        alias:{
+            'printer':'jquery.PrintArea.js'
+        }
     },
     plugins:[
         new webpack.optimize.CommonsChunkPlugin('vendor','vendor.js',Infinity)
