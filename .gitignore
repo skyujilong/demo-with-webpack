@@ -2,3 +2,5 @@
 .idea/*
 assets/node_modules
 assets/bundle
+assets/dep/.cache
+assets/dep/template.js

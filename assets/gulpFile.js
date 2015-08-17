@@ -15,6 +15,8 @@ var less = require('gulp-less');
 
 var named = require('vinyl-named');
 
+var tmodjs = require('gulp-tmod');
+
 gulp.task('watch:less-dev',function(){
     return gulp.src(__dirname + '/css/*.less')
         .pipe(plumber())
@@ -32,3 +34,21 @@ gulp.task('watch:js-dev',function(){
         .pipe(webpack(webpackConfig))
         .pipe(gulp.dest(__dirname + '/bundle/js/'));
 });
+
+gulp.task('tmod',function(){
+    return gulp.src(__dirname + '/tpl/**/*.html')
+        .pipe(tmodjs({
+            base:__dirname + '/tpl/',
+            output:__dirname + '/dep/',
+            charset:'utf-8',
+            "syntax": "simple",
+            //"helpers": "./public/plug/template-helper.js",
+            "escape": true,
+            "compress": true,
+            "type": "default",
+            "combo": true,
+            "minify": true,
+            "cache": false
+        }));
+});
+

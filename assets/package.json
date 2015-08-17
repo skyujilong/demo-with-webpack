@@ -10,6 +10,7 @@
     "gulp-watch":"*",
     "gulp-less":"*",
     "gulp-plumber":"*",
-    "vinyl-named":"*"
+    "vinyl-named":"*",
+    "gulp-tmod":"*"
   }
 }
