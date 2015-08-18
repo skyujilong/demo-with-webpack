@@ -1,7 +1,7 @@
 /**
  * Created by YU on 2015/8/6.
  */
-define(['jquery','util/ajax','template'],function ($, ajax, template) {
+define(['jquery','util/ajax','template' ],function ($, ajax, template) {
 
     var addUserInfo = {
         init: function(){

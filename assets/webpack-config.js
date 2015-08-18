@@ -20,7 +20,11 @@ module.exports = {
         extensions:['.js','.less',''],
         modulesDirectories:['node_modules'],
         alias:{
-            'printer':'jquery.PrintArea.js'
+            'printer':'jquery.PrintArea.js',
+            'echarts$':'echarts/echarts.js',
+            'echarts':'echarts/src',
+            'zrender$':'zrender/src/zrender.js',
+            'zrender':'zrender/src'
         }
     },
     plugins:[

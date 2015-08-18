@@ -29,7 +29,7 @@ gulp.task('watch:less-dev',function(){
 });
 
 gulp.task('watch:js-dev',function(){
-    return gulp.src(__dirname + '/js/main/*.js')
+    return gulp.src(/*__dirname + '/js/main*//*.js'*/__dirname + '/js/**/*.js')//dev模式下扫描业务js pro模式下扫描main文件夹下js
         .pipe(named())
         .pipe(webpack(webpackConfig))
         .pipe(gulp.dest(__dirname + '/bundle/js/'));
