@@ -35,6 +35,13 @@ gulp.task('watch:js-dev',function(){
         .pipe(gulp.dest(__dirname + '/bundle/js/'));
 });
 
+gulp.task('watch:js',function(){
+    return gulp.src(__dirname + '/js/main/*.js')
+        .pipe(named())
+        .pipe(webpack(webpackConfig))
+        .pipe(gulp.dest(__dirname + '/bundle/js/'));
+});
+
 gulp.task('tmod',function(){
     return gulp.src(__dirname + '/tpl/**/*.html')
         .pipe(tmodjs({
