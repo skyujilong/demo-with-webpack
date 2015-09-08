@@ -7,8 +7,12 @@ var webpack = require('webpack');
 module.exports = {
     watch: true,
     output:{
-        filename:'[name].js'
+        path:__dirname + '/bundle/js/',
+        publicPath:'/demo-with-webpack/assets/bundle/js/',//配置chunkFile加载地址的,这里要写服务器路径
+        filename:'[name].js',
+        chunkFilename:'[name].chunk.js'
     },
+    cache:true,
     module:{
         loaders:[
             {test:/\.less$/,loader:"style!css!less"},//less加载
