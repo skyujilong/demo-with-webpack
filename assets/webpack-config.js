@@ -8,7 +8,7 @@ module.exports = {
     watch: true,
     output:{
         path:__dirname + '/bundle/js/',
-        publicPath:'/demo-with-webpack/assets/bundle/js/',//配置chunkFile加载地址的,这里要写服务器路径
+        publicPath:'/demo-with-webpack/assets/bundle/js/',//配置chunkFile加载地址的,这里要写服务器路径,可以写cdn的地址
         filename:'[name].js',
         chunkFilename:'[name].chunk.js'
     },
