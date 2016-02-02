@@ -6,6 +6,7 @@ var webpack = require('webpack');
 
 module.exports = {
     watch: true,
+    devtool:"#inline-source-map",
     output:{
         path:__dirname + '/bundle/js/',
         publicPath:'/demo-with-webpack/assets/bundle/js/',//配置chunkFile加载地址的,这里要写服务器路径,可以写cdn的地址
@@ -16,7 +17,8 @@ module.exports = {
     module:{
         loaders:[
             {test:/\.less$/,loader:"style!css!less"},//less加载
-            {test:/\.json$/,loader:'json'}//加载json对象
+            {test:/\.json$/,loader:'json'},//加载json对象
+            {test:/^es5-sham\.min\.js|es5-shim\.min\.js$/,loader:'script'}
         ]
     },
     resolve:{

@@ -11,6 +11,8 @@
     "gulp-less":"*",
     "gulp-plumber":"*",
     "vinyl-named":"*",
-    "gulp-tmod":"*"
+    "gulp-tmod":"*",
+    "script-loader":"*",
+    "exports-loader":"*"
   }
 }

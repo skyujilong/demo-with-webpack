@@ -35,6 +35,8 @@ gulp.task('watch:js-dev',function(){
         .pipe(gulp.dest(__dirname + '/bundle/js/'));
 });
 
+gulp.task('watch:all',['watch:less-dev','watch:js']);
+
 gulp.task('watch:js',function(){
     return gulp.src(__dirname + '/js/main/*.js')
         .pipe(named())
